@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>Update Item</mat-card-title>
+    <form (ngSubmit)="updateItem()">
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="item.name" name="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Description" [(ngModel)]="item.description" name="description" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Update</button>
+    </form>
+  </mat-card>
