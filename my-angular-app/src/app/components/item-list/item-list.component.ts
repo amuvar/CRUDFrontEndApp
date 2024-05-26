@@ -23,7 +23,7 @@ export class ItemListComponent implements OnInit {
     this.itemService.getItems().subscribe(items => this.items = items);
   }
   editItem(item: Item): void {
-    this.router.navigate(['/edit', item.id]);
+    this.router.navigate(['/edit-item', item.id]);
   }
 
   deleteItem(id: number): void {
@@ -31,7 +31,7 @@ export class ItemListComponent implements OnInit {
   }
 
   addItem(): void {
-    this.router.navigate(['/add']);
+    this.router.navigate(['/create-item']);
   }
 
 }

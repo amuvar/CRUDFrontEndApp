@@ -11,13 +11,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 
 import { FormsModule } from '@angular/forms';  // <<<< import it here
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { ItemCreateComponent } from './components/item-create/item-create.component';
+import { ItemEditComponent } from './components/item-edit/item-edit.component';
+// import { ItemEditComponent } from './components/item-edit/item-edit.component'; // Import HttpClientModule
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemListComponent
+    ItemListComponent,
+    ItemCreateComponent,
+    ItemEditComponent
+    
 
   ],
   imports: [
@@ -28,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http'; // Import HttpClientMod
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule,MatTableModule
+    MatInputModule,MatTableModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

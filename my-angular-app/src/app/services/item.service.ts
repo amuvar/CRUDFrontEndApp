@@ -8,7 +8,7 @@ import { Item } from '../models/item.model';
   providedIn: 'root'
 })
 export class ItemService {
-  private apiUrl = 'https://localhost:44305/items';
+  private apiUrl = 'https://crudappapi.azurewebsites.net/items';
 
   constructor(private http: HttpClient) {}
 

@@ -1,0 +1,10 @@
+<h2>Edit Item</h2>
+<div class="form-group" >
+<form (ngSubmit)="updateItem()" >
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="item.name" name="name" required>
+  <label for="description">Description:</label>
+  <input type="text" id="description" [(ngModel)]="item.description" name="description" required>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+</div>
