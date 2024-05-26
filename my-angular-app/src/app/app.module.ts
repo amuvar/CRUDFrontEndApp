@@ -18,14 +18,13 @@ import { ItemCreateComponent } from './components/item-create/item-create.compon
 import { ItemEditComponent } from './components/item-edit/item-edit.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ItemListComponent,
     ItemCreateComponent,
     ItemEditComponent
-    
-
   ],
   imports: [
     BrowserModule,
