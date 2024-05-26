@@ -37,8 +37,8 @@ export class ItemEditComponent implements OnInit {
   }
 
   updateItem(): void {
-    if (this.myForm.valid) {
+    
     this.itemService.updateItem(this.item.id, this.item).subscribe(() => this.router.navigate(['/items']));
-    }
+    
   }
 }
